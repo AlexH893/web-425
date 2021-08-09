@@ -1,0 +1,18 @@
+{
+    "name": "ts-examples",
+    "version": "1.0.0",
+    "description": "TypeScript examples",
+    "main": "index.js",
+    "scripts": {
+      "person-class": "tsc && node dist/person.class.js",
+      "vehicle-class": "tsc && node dist/vehicle.class.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Alex Haefner",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^16.4.13",
+        "tslint": "^6.1.3",
+        "typescript": "^4.3.5"
+      }
+  }
