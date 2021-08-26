@@ -1,0 +1,36 @@
+<!---
+ * Title: sign-in.component.html
+ * Author: Alex Haefner
+ * Date: 15 August 2021
+ * Description: The html component for sign-in
+ --->
+
+
+ <div class='card signin-container'>
+  <div class='card-body'>
+    <h3 class='card-title'>Sign in</h3>
+
+    <form class='card-text'>
+
+      <!--Sign in input field-->
+      <div class='form-group'>
+        <label for='txtUserName'>Username</label>
+        <input type='text' class='form-control' id='txtUserName' placeholder='Enter your username'/>
+      </div>
+
+      <!--Password input field-->
+      <div class='form-group'>
+        <label for='txtPassword'>Password</label>
+        <input type='text' class='form-control' id='txtPassword' placeholder='Enter your password'/>
+      </div>
+      <br/>
+
+      <!--Submit button-->
+      <div class='form-group'>
+        <button class='btn btn-primary float-end' (click)='signin()'>Submit</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>

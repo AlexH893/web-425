@@ -1,0 +1,14 @@
+<!---
+ * Title: my-details-component.html
+ * Author: Alex Haefner
+ * Date: 15 August 2021
+ * Description: The details component file for my enhanced app
+ --->
+
+<ul class="list-group">
+  <li class="list-group-item">{{ myProfile.fullName }}</li>
+  <li class="list-group-item">{{ myProfile.favoriteFood }}</li>
+  <li class="list-group-item">{{ myProfile.favoriteColor }}</li>
+  <li class="list-group-item"><span *ngFor = "let word of myProfile.keywords"> {{ word }}</span></li>
+
+</ul>
