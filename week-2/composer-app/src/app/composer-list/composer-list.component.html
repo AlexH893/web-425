@@ -1,3 +1,12 @@
+<!---
+ * Title: composer-list.component.html
+ * Author: Alex Haefner
+ * Date: 15 August 2021
+ * Description: The composer-list component file for the composer app, where the composer information
+ * is displayed
+ --->
+
+
 <div class="row">
   <div class="col-sm-12">
     <table class="table table-bordered">
@@ -7,10 +16,10 @@
           <th scope="col">Genre</th>
         </tr>
       </thead>
-      <!-- loop over the array of composers and
-           output the results to a Bootstrap table -->
-      <tbody *ngFor= " let composer of composers ">
+      <!-- Loop that iterates over composer array -->
+      <tbody *ngFor="let composer of composers">
         <tr>
+          <!-- Echoing composer name and genre -->
           <td scope="row">{{ composer.fullName }}</td>
           <td>{{composer.genre}}</td>
         </tr>

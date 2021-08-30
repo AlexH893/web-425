@@ -24,6 +24,7 @@ export class ComposerService {
   composers: Array<IComposer>;
 
   constructor() {
+    //Array of composer information
     this.composers = [
       {composerId: 100, fullName:"Paul Simon", genre:"Rock"},
       {composerId: 101, fullName:"Freddie Mercury", genre:"Rock"},

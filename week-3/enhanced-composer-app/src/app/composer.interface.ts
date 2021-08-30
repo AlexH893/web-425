@@ -1,13 +1,15 @@
 /**
- * Title: composer-interface.ts
+ * Title: composer.interface.ts
  * Author: Alex Haefner
- * Date: 21 August 2021
- * Description: The composer interface for enhanced composer app
+ * Date: 30 August 2021
+ * Description: The composer interface ts file for enhanced composer app
  */
 
-//Exporting the interface
+//The IComposer interface, exported
 export interface IComposer {
+
   composerId: number;
   fullName: string;
   genre: string;
+
 }

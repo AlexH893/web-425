@@ -1,21 +1,29 @@
+<!---
+ * Title: composer-list.component.html
+ * Author: Alex Haefner
+ * Date: 15 August 2021
+ * Description: The composer-list component file for the composer app, where the composer information
+ * is displayed
+ --->
+
+
 <div class="row">
   <div class="col-sm-12">
     <table class="table table-bordered">
       <thead class="thead-dark">
         <tr>
-          <!-- Table headers -->
+          <th scope="col">Composer ID</th>
           <th scope="col">Full name</th>
           <th scope="col">Genre</th>
         </tr>
       </thead>
-      <!-- loop over the array of composers and
-           output the results to a Bootstrap table -->
-      <tbody *ngFor= " let composer of composers ">
+      <!-- Loop that iterates over composer array -->
+      <tbody *ngFor="let composer of composers">
         <tr>
-          <!-- New column for composer ID, updating table definition-->
-          <td scope="row"> <a routerLink= "/composer-details/{{composer.composerId}}" > {{ composer.composerId }} </a></td>
-          <td scope="row">{{ composer.fullName }}</td>
-          <td>{{composer.genre}}</td>
+          <td scope="row"> <a routerLink="/composer-details/{{composer.composerId}}">{{ composer.composerId }}</a></td>
+          <!-- Echoing composer name and genre -->
+          <td>{{ composer.fullName }}</td>
+          <td>{{ composer.genre }}</td>
         </tr>
       </tbody>
     </table>

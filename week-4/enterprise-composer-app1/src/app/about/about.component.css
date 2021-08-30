@@ -1,0 +1,19 @@
+/**
+ * Title: about.component.css
+ * Author: Richard Krasso
+ * Date: 15 August 2021
+ * Description: The css file for composer app
+ **/
+
+.apa-reference {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.composer-container {
+  padding-top: 50px;
+}

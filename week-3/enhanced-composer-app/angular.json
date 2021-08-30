@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "enhanced-enhanced-composer-app": {
+    "enhanced-composer-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/enhanced-enhanced-composer-app",
+            "outputPath": "dist/enhanced-composer-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,13 +30,9 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -78,7 +74,7 @@
               "browserTarget": "enhanced-composer-app:build:production"
             },
             "development": {
-              "browserTarget": "enhanced-enhanced-composer-app:build:development"
+              "browserTarget": "enhanced-composer-app:build:development"
             }
           },
           "defaultConfiguration": "development"

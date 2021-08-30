@@ -5,6 +5,7 @@
  * Description: The app module ts file for composer app
  */
 
+//imports
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';

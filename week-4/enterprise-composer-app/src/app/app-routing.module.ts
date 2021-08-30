@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ComposerDetailsComponent } from './composer-details/composer-details.component';
 
+
+//An array containing the different paths & routes
 const routes: Routes = [
   {
     path: '',
@@ -42,4 +44,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
+//Exporting class
 export class AppRoutingModule { }
