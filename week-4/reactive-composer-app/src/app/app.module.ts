@@ -7,7 +7,7 @@
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/form';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComposerListComponent } from './composer-list/composer-list.component';
@@ -28,7 +28,9 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
