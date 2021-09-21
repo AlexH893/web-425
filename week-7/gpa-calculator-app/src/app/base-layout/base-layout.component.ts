@@ -17,7 +17,7 @@ import { Router } from '@angular/router';
 })
 export class BaseLayoutComponent implements OnInit {
 
-
+  //var with string type
   assignment: string;
 
   constructor(private cookieService: CookieService, private router: Router) {

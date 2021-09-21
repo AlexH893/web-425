@@ -1,0 +1,25 @@
+/*
+ * Title: sign-in.component.css
+ * Author: Alex Haefner
+ * Date: 12 Sep 2021
+ * Description: The sign-in css file
+*/
+
+
+.signin-container {
+  margin: 15% auto;
+
+  width: 35%;
+}
+
+.signin-container > mat-card-title, mat-card-subtitle {
+  text-align: center;
+}
+
+.msg-error {
+
+  margin: 10px 0px;
+  padding: 12px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
