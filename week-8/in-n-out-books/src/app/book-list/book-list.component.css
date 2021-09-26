@@ -1,0 +1,38 @@
+/*
+ * Title: book-list.component.css
+ * Author: Alex Haefner
+ * Date: 21 August 2021
+ * Description: The composer-list css file for books app
+ */
+
+ /* styling for grid container */
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 25px;
+}
+
+.grid-container__item {
+  font-size: 30px;
+
+  padding: 20px;
+}
+
+/*styling for text and cursor on hover */
+.grid-container__ahref {
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.grid-container__ahref:hover {
+
+  text-decoration: underline;
+}
+
+/*positioning of spinner */
+.spinner {
+  margin-top: 2%;
+  margin-left: 45%;
+}
